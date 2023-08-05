@@ -1,0 +1,209 @@
+#navigation-bar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    height: 73px;
+}
+
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+
+.heading{
+    text-decoration: underline;
+    font-size: 3rem;
+    color: rgb(152, 42, 158);
+}
+
+.gradient-background {
+    background: linear-gradient(45deg, #23c069, #ffc371, #8d8910);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    border-radius: 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: auto;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+/* Up Button */
+.back-top{
+    float: right;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 999;
+	background-color:#b1040e;
+	padding: 8px 14px;
+    text-align: center;
+    -moz-box-shadow:    5px 10px 15px -5px #00243a;
+    box-shadow:         5px 10px 15px -5px #00243a;
+    border: 2px solid #fff;
+}
+.show{
+    display:block;
+}
+.slideInUp {
+    animation-name: slideInUp;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.text-white {
+    color: white;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.unshow{
+    display: none;
+}
+
+/* hero background image */
+.nobgimage {
+    height: 100vh;
+    background: url("./Icons/Back_picture.webp");
+    background-size:cover;
+    position: relative;
+    top: 57px;
+}
+
+.container-non-fluid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.photo-box{
+    display: inline;
+}
+
+.home-text-box{
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.home-text-box-p{
+    font-size: 20px;
+}
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+.navi-btns-list{
+    display: none;
+    float: right;
+    background-color: rgb(238, 255, 255);
+    padding: 10px;
+    margin: 5px 5px 0px 0px;
+    z-index: 200;
+    position: fixed;
+    top: 80px;
+    left: 45%;
+    width: 150px;
+    border-radius: 5%;
+}
+.three-list{
+    display: none;
+}
+
+.circle {
+    border: 4px solid transparent; /* Initial border color */
+    position: relative;
+    animation: glowing-pulse 2s linear infinite; /* Apply the animation */
+}
+
+@keyframes glowing-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 165, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 20px rgba(255, 165, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 50px rgba(237, 130, 8, 0);
+    }
+}
+
+@media (max-width: 972px){
+    .bgimage{
+        height: 200vh;
+    }
+}
+
+@media (max-width: 775px){
+    .navi-btns-flat{
+        display: none;
+    }
+    .three-list{
+        display: block;
+    }
+
+}
+
+@media (max-width: 530px){
+    .home-text-box{
+        width: auto;
+    }
+
+    .container-non-fluid img{
+        height: 200px;
+        width: 200px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 335px){
+    .home-text-box-p{
+        font-size: 10px;
+    }
+
+    .container-non-fluid img{
+        height: 100px;
+        width: 100px;
+        justify-content: center;
+    }
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind other elements */
+}
+
+
+.heading{
+    color: rgb(207, 210, 210);
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+    /* You can adjust the color and shadow size to achieve the desired effect */
+}

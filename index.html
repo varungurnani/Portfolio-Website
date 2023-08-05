@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+        <link rel="icon" href="./Icons/V_icon.png" type="image/x-icon">
+    </head>
+    <body>
+
+      <video autoplay loop muted id="video-background">
+        <source src="./Clips/pexels_4.mp4" type="video/mp4">
+        Sorry, your browser does not support the video tag.
+    </video>
+
+        <section id="navigation-bar" style="background-color: rgb(5, 6, 73);">
+            <div class="container">
+                <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                  <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <img src="./Icons/V 3.jpg" height="32" width="35px"/>
+                    <span class="fs-4" style="color: whitesmoke; text-shadow: 3px 3px 3px white;">&nbsp Varun Gurnani</span>
+                  </a>
+            
+                  <div class="navi-btns-flat">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact Me</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="three-list">
+                    &nbsp&nbsp&nbsp&nbsp
+                      <button id="toggleBtn" style="background-color: inherit; border: 0px; border-radius: 50%; filter: invert(1);">
+                        <img src="./Icons/menu-button-of-three-horizontal-lines.svg" height="20" alt="menu button"/>
+                      </button>
+                  </div>
+
+                </header>
+              </div>
+        </section>
+
+        <div>
+        <div class="nav-pills navi-btns-list">
+            <ul class="" style="list-style-type: none;">
+                <li class="nav-item" style="margin: 3px;"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item" style="margin: 3px;"><a href="#portfolio" class="nav-link active">Projects</a></li>
+                <li class="nav-item" style="margin: 3px;"><a href="#services" class="nav-link active">Skills</a></li>
+                <li class="nav-item" style="margin: 3px; font-size: 0.8rem;"><a href="#contact" class="nav-link active">Contact Me</a></li>
+            </ul>
+        </div>
+        </div>
+
+         <!-- main banner -->
+          <section class="bgimage container-fluid" id="home" style="margin-top: 120px;">
+            <div class="container-non-fluid">
+                <div class="photo-box">
+                  <div class="col-md-5 order-md-1" style="display: inline-block;">
+                    <img src="./Icons/my_photo4.png" height="350" width="350" class="circle rounded-circle" style="margin-left: 80px; border: 10px solid black;"/>
+                  </div>
+                </div>
+                <div class="gradient-background" style="align-items: center;">
+                  <div class="home-text-box" style="display: inline-block; ">
+                    <h2  class="featurette-heading fw-normal lh-1">Hi, I am Varun, a super cool web developer !
+                    <br/>
+                    <p  style="font-family: 'Edu SA Beginner', cursive; letter-spacing: 2px; line-height: 1.5;" class="home-text-box-p"><br/> I am currently exploring the world 🌏 of web 🕸️ development technologies and developing useful, creative 🎊 and professional looking projects using HTML, CSS, JavaScript and their frameworks 🚀. I am passionate about and experienced in Data Analytics 📈 and Machine Learning 📊 and using them to solve real world problems. I have great skills and passion for programming and learning data structures and algorithms in C/ C++ and Python 🐍.</p>
+                  </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Go up button -->
+        <div class="back-top show animated slideInUp unshow" id="scrollToTopBtn">			
+          <a href="#" class="nav-item nav-link"><i style="color: white; font-weight: 500; "><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16" shadow="10px" style="filter: drop-shadow(20px 20px 10px rgb(101, 144, 101));">
+            <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+            <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+          </svg></i></a>
+        </div>
+
+        <!-- portfolio section -->
+        
+
+        <section id="portfolio" style="margin-bottom: 40px; margin-top: 40px;">
+            <div class="container mt-3">
+                <h1 class="text-center heading">Projects</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./Icons/github_icon.jpg" height="30" alt="Card image" style="width: 30px">
+                            <div class="card-body">
+                                <h4 class="card-title">Applications of Machine Learning</h4>
+                                <p class="card-text">Learned to make various machine learning models from scratch and use for regression, classification and clustering.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-success">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                      <div class="card">
+                          <img class="card-img-top" src="./Icons/github_icon.jpg" height="30" alt="Card image" style="width: 30px">
+                          <div class="card-body">
+                              <h4 class="card-title">Portfolio Website</h4>
+                              <p class="card-text">Made use of HTML, CSS, JavaScript and their frameworks to create beautiful looking and behaving website. (The one which you currently are watching !)</p>
+                              <div class="text-center">
+                                  <a href="#" class="btn btn-success">Link</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+    
+                </div>
+        </section>
+        
+
+        <!-- skills section -->
+        <section id="services">
+          <div class="container">
+              <h1 class="text-center heading">Skills</h1>
+              <div class="row">
+                  <div class="col-lg-4 mt-4">
+                      <div class="card servicesText">
+                          <div class="card-body">
+                              <i class="fas servicesIcon fa-clock"></i>
+                              <h4 class="card-title mt-3">Website Development</h4>
+                              <p class="card-text mt-3">
+                                HTML, CSS, JavaScript
+                              </p>
+                          </div>
+                      </div>  
+                  </div>
+                  <div class="col-lg-4 mt-4">
+                      <div class="card servicesText">
+                          <div class="card-body">
+                              <i class='fas servicesIcon fa-layer-group'></i>
+                              <h4 class="card-title mt-3">Problem Solving</h4>
+                              <p class="card-text mt-3">
+                                DSA
+                              </p>
+                          </div>
+                      </div>  
+                  </div>
+  
+                  <div class="col-lg-4 mt-4">
+                      <div class="card servicesText">
+                          <div class="card-body">
+                              <i class='far servicesIcon fa-check-circle'></i>
+                              <h4 class="card-title mt-3">Machine Learning</h4>
+                              <p class="card-text mt-3">
+                                Python, scikit-learn
+                              </p>
+                          </div>
+                      </div>  
+                  </div>
+              </div>
+  
+              <div class="row">
+                  <div class="col-lg-4 mt-4">
+                      <div class="card servicesText">
+                          <div class="card-body">
+                              <i class='fas servicesIcon fa-search'></i>
+                              <h4 class="card-title mt-3">Data Analytics</h4>
+                              <p class="card-text mt-3">
+                                Pandas, NumPy, SQL, MS Excel
+                              </p>
+                          </div>
+                      </div>  
+                  </div>
+  
+                  <div class="col-lg-4 mt-4">
+                      <div class="card servicesText">
+                          <div class="card-body">
+                              <i class='fas servicesIcon fa-shield-alt'></i>
+                              <h4 class="card-title mt-3">Statistics</h4>
+                              <p class="card-text mt-3">
+                                HSO201A :)
+                              </p>
+                          </div>
+                      </div>  
+                  </div>
+  
+                  <div class="col-lg-4 mt-4">
+                      <div class="card servicesText">
+                          <div class="card-body">
+                              <i class='fas servicesIcon fa-wrench'></i>
+                              <h4 class="card-title mt-3">3D modelling</h4>
+                              <p class="card-text mt-3">
+                                AutoCAD, Fusion 360, Revit, Civil Engineering
+                              </p>
+                          </div>
+                      </div>  
+                  </div>
+        
+              </div>
+          </div>
+        </section>
+        
+
+
+        <!-- contact section-->
+    <section id="contact">
+      <div class="container mt-3 contactContent">
+          <h1 class="text-center heading">Contact Me</h1>
+          <h4 class="text-center heading" style="font-weight: 100; font-size: 2rem; text-decoration: none;">( Contacting me is very easy, just drop a message by filling out the following fields. )</h4>
+          
+
+          <div class="row mt-4" style="border-radius: 70%;">
+            <div class="col-lg-6">
+              <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                <div id="display-google-map" style="height:100%; display: flex; justify-content: center; width:100%;max-width:100%;">
+                  <iframe style="height:70%; width:70%;border:5px dashed rgb(177, 173, 173); margin: 5px;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Indian+Institute+of+Technology+Kanpur,+Kalyanpur,+Kanpur,+Uttar+Pradesh,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div><a class="embed-map-html" href="https://www.bootstrapskins.com/themes" id="enable-map-info">premium bootstrap themes</a>
+                      <!-- <style>#display-google-map .text-marker{}.map-generator{max-width: 100%; max-height: 100%; background: none;</style> -->
+                    </div>
+            </div>
+
+
+              <div class="col-lg-6">
+                  <!-- form fields -->
+                  <div class="container">
+                    <form target="_blank" action="https://formsubmit.co/58fa553a32d730b91365522b02ddcefe" method="POST">
+                      <input type="hidden" name="_captcha" value="false">
+                      <input type="hidden" name="_next" value="https://home.iitk.ac.in/~vgurnani20/#">
+                                     <input type="text" name="name" class="form-control form-control-lg" placeholder="Your name" required="">
+                                     <input type="email" name="email" class="form-control mt-3" placeholder="Your contact details (email, phone, etc.)" required="">
+                                     <input type="text" name="_subject" class="form-control mt-3" placeholder="Subject (optional)">
+                                     <div class="mb-3 mt-3">
+                                         <textarea name="message" class="form-control" rows="5" id="comment" placeholder="Your message goes here !" required=""></textarea>
+                                     </div>
+                                 
+                                 <button type="submit" class="btn btn-success mt-3">Send</button>
+             
+                       </form>
+                  </div>
+                  
+                  
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+  
+
+        <!-- footer begins -->
+        <footer class="footer" role="contentinfo">            
+          <div class="container-fluid">
+                      
+      <div class="row justify-content-center pt-3" style=" background-color:#17252A;">
+                    <div class="col-md-12 text-center">
+              <div class="moduletable">
+        
+
+  <div class="custom">
+    <p class="my-2">
+      <a href="https://www.facebook.com" target="_blank" style="margin-right: 3px;"><img src="./Icons/fb_icon.png" alt="facebook-profile" style="max-width: 40px; border-radius: 50%;"></a>
+      <a href="https://www.linkedin.com/in/varun-gurnani-7870571ba/" target="_blank" style="margin-right: 3px;"><img src="./Icons/linkedin_icon.png" alt="linkedin-profile" style="max-width: 40px; border-radius: 50%;"></a> 
+      <a href="https://instagram.com" target="_blank" style="margin-right: 3px;"><img src="./Icons/insta_icon.png" alt="instagram-profile" style="max-width: 40px; border-radius: 50%;"></a> 
+      <a href="https://www.github.com/varungurnani" target="_blank" style="margin-right: 3px;"><img src="./Icons/github_icon.jpg" alt="iitk-facebook" style="max-width: 40px; border-radius: 50%;"></a>
+      <a href="https://codeforces.com" target="_blank" style="margin-right: 3px;"><img src="./Icons/CF_icon.jpg" alt="iitk-facebook" style="max-width: 40px; border-radius: 50%;"></a>
+      <a href="https://www.leetcode.com" target="_blank" style="margin-right: 3px;"><img src="./Icons/LC_icon.jpg" alt="iitk-facebook" style="max-width: 40px; border-radius: 50%;"></a>
+    </p>
+  </div>
+  </div>
+
+          </div>
+                              <div class="col-md-12 mb-3 text-center">
+              <div class="moduletable copy-text mb-3">
+        
+
+<div class="custom copy-text mb-3">
+<p class="text-white">Copyright © 2023: Varun Gurnani</p>
+<p class="text-white">Developed and Maintained By : Varun Gurnani (4th Year UG @ IITK)</p></div>
+  </div>
+
+          </div>
+                  
+      </div>
+          </div>
+      </footer>
+
+      <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
